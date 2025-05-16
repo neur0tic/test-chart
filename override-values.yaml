@@ -1,0 +1,11 @@
+replicaCount: 2
+image:
+ repository: nginx
+ tag: "1.25.3"
+ pullPolicy: Always
+
+service: 
+ name: nginx-service
+ type: ClusterIP
+ port: 80
+ targetPort: 8080
